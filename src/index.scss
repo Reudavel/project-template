@@ -1,0 +1,17 @@
+/*Recomend use BEM Block, Element, Modifier 
+(Layout, Section, Section-Component, Component__Variable)
+LSCV
+
+the order is important
+
+maybe need to change for  @use instead of import
+*/
+
+@import "./styles/base.scss";
+@import "./styles/mediaquerys.scss";
+@import "./styles/button.scss";
+@import "./styles/contact.scss";
+@import "./styles/footer.scss";
+@import "./styles/nav.scss";
+@import "./styles/project.scss";
+@import "./styles/welcome.scss";
