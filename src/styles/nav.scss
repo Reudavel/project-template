@@ -14,8 +14,7 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
   .nav {
     display: flex;
     justify-content: space-between;
-    /*justify-content: flex-end;*/
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,11 +40,18 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
     }
   }
   
-  
+  @media (max-width: 485px){
+    .nav{
+      display: none;
+    }
+  }
   
   @media (max-width: 28.75em) {
     .nav {
       justify-content: center;
+      .logo{
+        justify-self: start;
+      }
     }
   
     .nav-list {
