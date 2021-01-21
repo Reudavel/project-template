@@ -7,11 +7,13 @@ the order is important
 maybe need to change for  @use instead of import
 */
 
-@import "./styles/base.scss";
-@import "./styles/mediaquerys.scss";
-@import "./styles/button.scss";
-@import "./styles/contact.scss";
-@import "./styles/footer.scss";
-@import "./styles/nav.scss";
-@import "./styles/project.scss";
-@import "./styles/welcome.scss";
+@import "./styles/0_Base/base.scss";
+@import "./styles/0_Base/mediaquerys.scss";
+
+@import "./styles/1_Atoms/button.scss";
+
+@import "./styles/3_Organisms/contact.scss";
+@import "./styles/3_Organisms/footer.scss";
+@import "./styles/3_Organisms/nav.scss";
+@import "./styles/3_Organisms/project.scss";
+@import "./styles/3_Organisms/welcome.scss";
