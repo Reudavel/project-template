@@ -1,3 +1,4 @@
+@import "./themes";
 /*name things by what they are and what they do SEMANTIC and Kabkacase , not how they look like*/
 /* _layout.scss _ in the name of a scss file is a partials and indicates to scss transpilers to not convert to css
     because these files are made to be imported by another scss file*/
@@ -101,7 +102,7 @@ color: map-get($my-map, $key-value); this asign the value taht correspond to the
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
-    color: var(--main-white);
+    color: map-get($map: $defaultTheme, $key:"font-color" );
     //margin: 0px;
     /*
     to the main {
@@ -132,7 +133,7 @@ color: map-get($my-map, $key-value); this asign the value taht correspond to the
   
   a {
     text-decoration: none;
-    color: var(--main-white);
+    color: $fontColor;
   }
   
   img {

@@ -10,17 +10,19 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
 
  <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a> //to make clickable the hole screen 
 */
-
-  .nav {
+.nav-container{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #007EA7;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  .nav { 
+    margin: 0 auto;
+    max-width: 1140px;
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--main-red);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    z-index: 10;
     .logo {
       align-self: flex-start;
       height: 70px;
@@ -39,6 +41,8 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
       }
     }
   }
+}
+
   
   @media (max-width: 485px){
     .nav{
