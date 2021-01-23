@@ -11,12 +11,11 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
  <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a> //to make clickable the hole screen 
 */
 .nav-container{
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #007EA7;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  background: transparent;
   z-index: 10;
   .nav { 
     margin: 0 auto;

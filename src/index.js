@@ -5,10 +5,13 @@ import "./index.scss";//modify to use scss files
 //For changue the navbar style on scroll
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
-  if ( currentScrollPos > 75) {
-    document.getElementById("navbar").style.backgroundColor = "#007EA7";
+var navbar = document.getElementById("navbar");
+  if ( currentScrollPos > 300) {
+   navbar.style.backgroundColor = "black";
+   navbar.style.backgroundColor = "0 2px 0 rgba(0, 0, 0, 0.4)";
   } else {
-    document.getElementById("navbar").style.backgroundColor = "transparent";
+    navbar.style.backgroundColor = "transparent";
+    navbar.style.boxShadow = "none";
   }
   prevScrollpos = currentScrollPos;
 }
