@@ -10,7 +10,9 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
 
  <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a> //to make clickable the hole screen 
 */
+
 .nav-container{
+  $fontColor: #ffffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,9 +30,11 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
       width: 150px;
     }
     .nav-list {
+     
       display: flex;
       margin-right: 2rem;
       a {
+        color: $fontColor;
         display: block;
         font-size: 2.2rem;
         padding: 2rem;
